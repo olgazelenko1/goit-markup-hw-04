@@ -1,23 +1,55 @@
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
+
 a {
   text-decoration: none;
 }
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0%;
 }
+p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-.header-container {
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
+button {
+  border: none;
+  margin: 0 auto;
+}
+/*----------------------------------загальні налаштування-------------------------------------*/
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* -----------------------------------header----------------------------------------------------- */
+.page-header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+  
+}
+.container-header {
+display: block;
+}
+.
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -63,11 +95,27 @@ h4 {
 }
 
 .container {
+max-width: 1158px
+padding-left:  
+padding-right:  
+margin-left:  
+margin-right:  
 }
 
+/* -----------------------------------------------main info-----------------------------------------------------------*/
 .solutions {
   background-color: #2e2f42;
+  max-width: 100%;
+  padding: 0 0 120 0 ;
+  height: 600;
 }
+.container-header-solutions {
+
+}
+.solutions-header-solutions{
+
+}
+
 .header-solutions {
   font-weight: 700;
   font-size: 56px;
@@ -75,6 +123,14 @@ h4 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+}
+
+.container .button-name {
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+box-sizing: border-box;
 }
 .button-name {
   background-color: #4d5ae5;
@@ -92,6 +148,7 @@ h4 {
 
 .visually-hidden {
 }
+
 .header {
   font-weight: 700;
   font-size: 36px;
@@ -100,6 +157,21 @@ h4 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+.advantages {
+  max-width: 100%;
+}
+.container-advantages-list{
+  display: flex;
+width: 1128px;
+height: 104px;
+}
+
+.container-main-header {
+border-radius: 0 0 4px 4px;
+padding: 32 16;
+width: 264px;
+height: 380px;
 }
 .main-header {
   font-weight: 500;
@@ -117,13 +189,17 @@ h4 {
   text-align: center;
   color: #434455;
 }
+
 .team {
   background-color: #f4f4fd;
+  max-width: 100%;
 }
 .team-list {
   background-color: #ffffff;
 }
-
+.portfolio {
+  max-width: 100%;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -133,9 +209,12 @@ h4 {
   text-transform: capitalize;
   color: #2e2f42;
 }
-
+/*----------------------------------------------footer-------------------------------------------------------------*/
 .footer-name {
   background-color: #2e2f42;
+}
+
+.footer-name-container {
 }
 
 .footer-logo .logo-name {
