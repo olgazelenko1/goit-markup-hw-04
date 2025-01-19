@@ -52,13 +52,10 @@ button {
   overflow: hidden;
 }
 /* -----------------------------------header----------------------------------------------------- */
-.page-header {
+.header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border: 1px solid #ececec;
 }
-.container-header {
+.container .container-header {
   display: flex;
 }
 .logo {
@@ -82,7 +79,7 @@ button {
   display: flex;
   gap: 40px;
 }
-.nav-item {
+.navigation-list {
   margin-right: 40px;
 }
 .logo .header-logo {
@@ -129,9 +126,7 @@ button {
 /* -----------------------------------------------main info-----------------------------------------------------------*/
 .solutions {
   background-color: #2e2f42;
-  max-width: 100%;
   padding: 188px 0;
-  height: 600;
 }
 
 .header-solutions {
@@ -153,7 +148,7 @@ button {
   color: #ffffff;
   cursor: pointer;
   display: block;
-  min-width: 196px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
 }
@@ -162,7 +157,7 @@ button {
   background-color: #404bbf;
 }
 
-.header {
+.page-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -175,9 +170,12 @@ button {
   max-width: 100%;
   padding: 120px 0;
 }
-.advantages-title {
+.advantages-list {
   display: flex;
   gap: 24px;
+}
+.advantages-list-first {
+  width calc((100% - 3 * 24px) / 4);
 }
 .main-header {
   margin-bottom: 8px;
@@ -203,10 +201,9 @@ button {
 
 .team {
   background-color: #f4f4fd;
-  max-width: 100%;
-  padding: 120 0;
+  padding: 120px 0;
 }
-.header {
+.header-two {
   margin-bottom: 72px;
 }
 .team-list-title {
@@ -243,7 +240,7 @@ button {
   width: calc((100% - 48px) / 3);
 }
 .container-main-header {
-  padding: 32px 16px;
+  padding: 32px 0;
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
