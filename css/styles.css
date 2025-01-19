@@ -171,9 +171,6 @@ button {
 .advantages-list-first {
   width: calc((100% - 3 * 24px) / 4);
 }
-.main-header {
-  margin-bottom: 8px;
-}
 
 .main-header {
   margin-bottom: 8px;
@@ -192,11 +189,17 @@ button {
   text-align: center;
   color: #434455;
 }
-
+.container-main-header {
+  padding: 32px 0;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+
 .header-two {
   margin-bottom: 72px;
 }
@@ -243,7 +246,8 @@ button {
 .item-list-first {
   width: calc((100% - 48px) / 3);
 }
-.container-main-header {
+
+.container-portfolio-list {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
