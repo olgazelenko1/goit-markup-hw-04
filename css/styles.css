@@ -195,7 +195,7 @@ img {
   padding: 32px 0;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
+  text-align: center;
 }
 .team {
   background-color: #f4f4fd;
@@ -249,6 +249,7 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  text-align: left;
 }
 /*----------------------------------------------footer-------------------------------------------------------------*/
 .footer-name {
