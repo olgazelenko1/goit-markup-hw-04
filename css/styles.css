@@ -53,19 +53,18 @@ button {
 }
 /* -----------------------------------header----------------------------------------------------- */
 .header {
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 .container-header {
   display: flex;
+  justify-content: space-between;
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
-  margin-right: 76px;
-}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -112,7 +111,6 @@ button {
 .contacts-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .contacts-link {
   font-size: 16px;
