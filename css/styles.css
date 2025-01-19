@@ -1,4 +1,3 @@
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -39,17 +38,29 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* -----------------------------------header----------------------------------------------------- */
-.page-header{
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 25px;
   border: 1px solid #ececec;
-  
 }
 .container-header {
-display: block;
+  display: flex;
 }
-.
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -58,8 +69,25 @@ display: block;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
-
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav:last-child {
+  margin-right: 0;
+}
+.navigation {
+  display: flex;
+  gap: 40px;
+}
+.nav-item {
+  margin-right: 40px;
+}
+.logo .header-logo {
+  padding: 24px 0;
+}
 .header-logo .logo-name-one {
   color: #2e2f42;
 }
@@ -83,6 +111,10 @@ display: block;
 .contacts {
   font-style: normal;
 }
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
 .contacts-link {
   font-size: 16px;
   line-height: 1.5;
@@ -94,29 +126,16 @@ display: block;
   color: #404bbf;
 }
 
-.container {
-max-width: 1158px
-padding-left:  
-padding-right:  
-margin-left:  
-margin-right:  
-}
-
 /* -----------------------------------------------main info-----------------------------------------------------------*/
 .solutions {
   background-color: #2e2f42;
   max-width: 100%;
-  padding: 0 0 120 0 ;
+  padding: 188px 0;
   height: 600;
-}
-.container-header-solutions {
-
-}
-.solutions-header-solutions{
-
 }
 
 .header-solutions {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -125,13 +144,6 @@ margin-right:
   color: #ffffff;
 }
 
-.container .button-name {
-border-radius: 4px;
-padding: 16px 32px;
-width: 169px;
-height: 56px;
-box-sizing: border-box;
-}
 .button-name {
   background-color: #4d5ae5;
   font-weight: 500;
@@ -140,13 +152,14 @@ box-sizing: border-box;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  min-width: 196px;
+  height: 56px;
+  border-radius: 4px;
 }
 .button-name:hover,
 .button-name:focus {
   background-color: #404bbf;
-}
-
-.visually-hidden {
 }
 
 .header {
@@ -160,20 +173,18 @@ box-sizing: border-box;
 }
 .advantages {
   max-width: 100%;
+  padding: 120px 0;
 }
-.container-advantages-list{
+.advantages-title {
   display: flex;
-width: 1128px;
-height: 104px;
-}
-
-.container-main-header {
-border-radius: 0 0 4px 4px;
-padding: 32 16;
-width: 264px;
-height: 380px;
+  gap: 24px;
 }
 .main-header {
+  margin-bottom: 8px;
+}
+
+.main-header {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -193,13 +204,26 @@ height: 380px;
 .team {
   background-color: #f4f4fd;
   max-width: 100%;
+  padding: 120 0;
+}
+.header {
+  margin-bottom: 72px;
+}
+.team-list-title {
+  display: flex;
+  gap: 24px;
 }
 .team-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .portfolio {
-  max-width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -209,18 +233,37 @@ height: 380px;
   text-transform: capitalize;
   color: #2e2f42;
 }
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.item-list-first {
+  width: calc((100% - 48px) / 3);
+}
+.container-main-header {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
 /*----------------------------------------------footer-------------------------------------------------------------*/
 .footer-name {
   background-color: #2e2f42;
-}
-
-.footer-name-container {
+  padding: 100px 0;
 }
 
 .footer-logo .logo-name {
   color: #f4f4fd;
 }
+
+.logo .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-info {
+  max-width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
