@@ -58,6 +58,14 @@ button {
 .container-header {
   display: flex;
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -68,10 +76,7 @@ button {
   color: #4d5ae5;
   margin-right: 76px;
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-}
+
 .header-nav:last-child {
   margin-right: 0;
 }
@@ -79,11 +84,8 @@ button {
   display: flex;
   gap: 40px;
 }
-.navigation-list {
-  margin-right: 40px;
-}
-.header-logo {
-  padding: 24px 0;
+.nav-item {
+  padding: 24px 0 24px;
 }
 .header-logo .logo-name-one {
   color: #2e2f42;
@@ -93,7 +95,7 @@ button {
   color: #404bbf;
 }
 .navigation-list {
-  padding: 24px 0;
+  margin-right: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -158,16 +160,6 @@ button {
   background-color: #404bbf;
 }
 
-.page-header {
-  margin-bottom: 72px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
 .advantages {
   max-width: 100%;
   padding: 120px 0;
@@ -222,6 +214,16 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.page-header {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
 
 .portfolio-title {
   font-weight: 700;
@@ -242,7 +244,7 @@ button {
   width: calc((100% - 48px) / 3);
 }
 .container-main-header {
-  padding: 32px 0;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
