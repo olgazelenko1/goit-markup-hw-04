@@ -28,6 +28,10 @@ img {
   display: block;
   height: auto;
 }
+svg {
+  width: 64px;
+  height: 64px;
+}
 /*----------------------------------загальні налаштування-------------------------------------*/
 .container {
   max-width: 1158px;
@@ -129,6 +133,22 @@ img {
 .solutions {
   background-color: #2e2f42;
   padding: 188px 0;
+  /*min-height: ;
+  padding: ;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
 }
 
 .header-solutions-title {
@@ -170,6 +190,20 @@ img {
   display: flex;
   gap: 24px;
 }
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto;
+}
+
+.advantages-list-img {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
 .advantages-list-first {
   width: calc((100% - 3 * 24px) / 4);
 }
@@ -205,10 +239,13 @@ img {
   display: flex;
   gap: 24px;
 }
+
 .team-list {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio {
@@ -264,10 +301,19 @@ img {
   display: inline-block;
   margin-bottom: 16px;
 }
-.footer-info {
+.footer-text {
   max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+}
+footer-icon {
+}
+.footer-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
