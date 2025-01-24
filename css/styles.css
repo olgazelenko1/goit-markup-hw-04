@@ -111,7 +111,7 @@ svg {
 .navigation-link.current {
   position: relative;
 }
-.navigation-link.current::before {
+.navigation-link.current::after {
   content: "";
 
   position: absolute;
@@ -152,8 +152,6 @@ svg {
 .solutions {
   background-color: #2e2f42;
   padding: 188px 0;
-  /*min-height: ;
-  padding: ;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,7 +160,7 @@ svg {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img11.jpg);
+    url(../images/people.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
