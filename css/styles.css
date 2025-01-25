@@ -363,8 +363,6 @@ svg {
 }
 /*----------------------------------------------footer-------------------------------------------------------------*/
 .footer {
-  display: flex;
-  align-items: baseline;
   background-color: #2e2f42;
   padding: 100px 0;
   letter-spacing: 0.02em;
@@ -372,9 +370,13 @@ svg {
   font-size: 16px;
 }
 .footer-container {
+  align-items: baseline;
+  display: flex;
+}
+.footer-logo-container {
   margin-right: 120px;
 }
-.footer-logo .logo-name {
+.logo-name {
   color: #f4f4fd;
 }
 
@@ -393,6 +395,15 @@ svg {
   margin-top: 0;
   margin-left: 540px;
 }
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
 .footer-soc-list {
   display: flex;
   gap: 16px;
@@ -413,17 +424,8 @@ svg {
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .footer-soc-nav:hover,
 .footer-soc-nav:focus {
   background-color: #31d0aa;
-}
-icon-soc .footer-social-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
 }
