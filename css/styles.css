@@ -243,11 +243,10 @@ svg {
   line-height: 1.5;
   letter-spacing: 0.019em;
   color: #434455;
-  margin: 8px;
+  margin-bottom: 8px;
 }
 .container-main-header {
-  /* display: flex; */
-  padding: 32px 0;
+  padding: 32px 8px;
   border: 1px solid #e7e9fc;
   border-top: none;
   text-align: center;
