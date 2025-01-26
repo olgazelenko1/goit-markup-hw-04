@@ -245,7 +245,7 @@ svg {
   margin-bottom: 8px;
 }
 .container-main-header {
-  padding: 32px 8px;
+  padding: 32px 0;
   border: 1px solid #e7e9fc;
   border-top: none;
   text-align: center;
